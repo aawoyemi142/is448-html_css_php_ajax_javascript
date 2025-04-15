@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Author: Emaan Dar-->
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="alerts.css">
+</head>
+
+<!-- The body of the document contains the main content and structure of the page. -->
+<!-- The header includes the UMBC logo and navigation links. The main section displays custom weather alerts, and the footer provides links to emergency updates and social media. -->
+<body>
+    <header>
+        <div class="logo">
+            <a href="homepage.html"><img src="umbc weather logo.png" alt="UMBC Weather Logo" style="height: 65px; width: 70px; vertical-align: middle;"></a> <!-- Link to homepage with UMBC logo -->
+            UMBC Weather
+        </div>
+
+        <!-- Navigation links for the alerts page -->
+        <!-- These links allow users to navigate to different sections of the UMBC Weather website. -->
+        <nav>
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="forecast.html">Forecast</a></li>
+                <li><a href="alerts.html">Alerts</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="notifications.html">Notifications</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content area for displaying weather alerts -->
+    <!-- The main section includes a title and a form for creating custom weather alerts. -->
+    <main>
+        <h2>Custom Weather Alerts</h2>
+        <div class="alert-form">
+            <label for="temperature">Notify me when temperature is below:</label>
+            <input type="number" id="temperature" name="temperature"> °F<br><br>
+
+            <!-- Notification method selection -->
+            <label>Notify via:</label><br>
+            <input type="checkbox" id="email" name="notification_method" value="email"> Email<br>
+            <input type="checkbox" id="sms" name="notification_method" value="sms"> SMS<br>
+            <input type="checkbox" id="in-app" name="notification_method" value="in-app"> In-App Notification<br><br>
+
+            <button onclick="saveAlert()">Save Alert</button>
+        </div>
+        
+        <!-- Alert list section for displaying active alerts -->
+        <!-- This section includes a title and a container for the list of active alerts. -->
+        <div id="alert-list">
+            <h3>Your Active Alerts</h3>
+            <div id="alerts-container">
+                </div>
+        </div>
+    </main>
+
+    <footer>
+        <p><a href="https://police.umbc.edu/emergency-preparedness/hazard-mitigation/emergency-action-procedures-for-severe-storms/">UMBC Emergency Updates</a> | <a href="https://www.instagram.com/umbclife/">Follow us on Social Media</a></p>
+    </footer>
+
+</body>
+</html>

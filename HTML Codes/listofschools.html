@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application</title>
+    <link rel="stylesheet" href="job_styles.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+    <h1>Healthcare Job Application</h1>
+    
+    <!-- Job Application Form -->
+    <form action="application_received.html" method="POST" id="jobForm"> 
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="full_name" required> <!-- Name attribute added -->
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone_number" required>
+
+        <label for="position">Job Position:</label>
+        <select id="position" name="job_position" required>
+            <option value="doctor">Doctor</option>
+            <option value="nurse">Nurse</option>
+            <option value="pharmacist">Pharmacist</option>
+            <option value="lab_technician">Lab Technician</option>
+            <option value="radiologist">Radiologist</option>
+            <option value="medical_assistant">Medical Assistant</option>
+        </select>
+
+        <button type="submit">Submit Application</button>
+    </form>
+
+    <!-- Job Openings Table -->
+    <h2>Available Job Openings</h2>
+    <table>
+        <tr>
+            <th>Position</th>
+            <th>Required Experience</th>
+            <th>Location</th>
+        </tr>
+        <tr>
+            <td>Doctor</td>
+            <td>5+ years</td>
+            <td>New York</td>
+        </tr>
+        <tr>
+            <td>Nurse</td>
+            <td>3+ years</td>
+            <td>California</td>
+        </tr>
+        <tr>
+            <td>Lab Technician</td>
+            <td>2+ years</td>
+            <td>Texas</td>
+        </tr>
+        <tr>
+            <td>Pharmacist</td>
+            <td>4+ years</td>
+            <td>Florida</td>
+        </tr>
+    </table>
+
+    <!-- Ordered List: Key Skills -->
+    <h2>Key Skills for Success</h2>
+    <ol>
+        <li>Excellent Communication</li>
+        <li>Strong Problem-Solving</li>
+        <li>Attention to Detail</li>
+    </ol>
+
+    <!-- Unordered List: Documents Needed -->
+    <h2>Required Documents</h2>
+    <ul>
+        <li>Resume</li>
+        <li>Cover Letter</li>
+        <li>References</li>
+    </ul>
+
+    <!-- Definition List: Job Terms -->
+    <h2>Job Application Terms</h2>
+    <dl>
+        <dt>CV</dt>
+        <dd>A detailed document highlighting professional and academic history.</dd>
+        <dt>Reference</dt>
+        <dd>A person who can vouch for your work experience and skills.</dd>
+    </dl>
+</body>
+</html>

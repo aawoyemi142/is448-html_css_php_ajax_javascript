@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Web Page2</title>
+    </head>
+    <body>
+        <!-- This page introduces me -->
+        
+        <h1>Welcome to My Web Page</h1>
+
+        <p>My name is Adepeju Awoyemi. I am an undergraduate student at UMBC.</p>
+
+        <p>My hobbies include reading, coding, and playing soccer</p>
+
+        <!-- Unordered list of favorite foods -->
+        <h2>My Favorite Foods</h2>
+        <ul>
+            <li>Pizza</li>
+            <li>Sushi</li>
+            <li>Pasta</li>
+        </ul>
+
+        <!-- Ordered list of daily routine -->
+        <h2>My Daily Routine</h2>
+        <ol>
+            <li>Wake up</li>
+            <li>Attend classes</li>
+            <li>Study</li>
+        </ol>
+
+        <!-- Definition list of technical terms -->
+        <h2>Technical Terms</h2>
+        <dl>
+            <dt>HTML</dt>
+            <dd>Hypertext Markup Language used for creating web pages.</dd>
+            <dt>CSS</dt>
+            <dd>Stylesheet language used for designing web pages.</dd>
+        </dl>
+
+        <!-- Creation of tables to structure data-->
+        <h2>My Courses</h2>
+        <table border="1">
+
+            <!--Table headers in columns-->
+            <tr>
+                <th>Course Name</th>
+                <th>Instructor</th>
+                <th>Room Number</th>
+            </tr>
+
+            <!--Table rows of courses-->
+            <tr>
+                <td>IS 448</td>
+                <td>Dr. Smith</td>
+                <td>Room 101</td>
+            </tr>
+            <tr>
+                <td>CS 202</td>
+                <td>Prof. Johnson</td>
+                <td>Room 203</td>
+            </tr>
+            <tr>
+                <td>Math 430</td>
+                <td>Dr. Brown</td>
+                <td>Room 301</td>
+        </table>
+
+        <!-- Building forms to collect user inputs -->
+        <h2>Contact Me</h2>
+        <form action="submit.php" method="get">
+            <label>Name: <input type="text" name="name"></label><br>
+            
+            <!-- Radio buttons -->
+            <label>Major: 
+                <select name="major">
+                    <option value="IS">Information Systems</option>
+                    <option value="CS">Computer Science</option>
+                    <option value="Math">Mathematics</option>
+                </select>
+            </label><br>
+            
+            <!-- Checkboxes for undergraduate levels-->
+            <label>Class Level:</label><br>
+            <label><input type="radio" name="level" value="Freshman"> Freshman</label>
+            <label><input type="radio" name="level" value="Sophomore"> Sophomore</label>
+            <label><input type="radio" name="level" value="Junior"> Junior</label>
+            <label><input type="radio" name="level" value="Senior"> Senior</label><br>
+            
+            <!-- Textarea for user comments -->
+            <input type="submit" value="Submit">
+        </form>
+        
+        <!-- Adding multimedia content -->
+        <h2>My Favorite Song</h2>
+        <audio controls>
+            <source src="Sikiru-Ayinde-Barrister-–-Reality.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <!-- Adding video content -->
+        <h2>My Favorite Video</h2>
+        <video width="320" height="240" controls>
+            <source src="a lady and more.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+    </body>
+</html>

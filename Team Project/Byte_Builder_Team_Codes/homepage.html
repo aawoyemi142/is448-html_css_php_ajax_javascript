@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Author: Adepeju Awoyemi-->
+
+<!-- This is a simple HTML document for UMBC Weather homepage -->
+<head>
+    <meta charset="UTF-8">
+    <title>UMBC Weather</title>
+    <link rel="stylesheet" href="homepage.css">
+</head>
+
+<!-- The body of the document contains the main content and structure of the page. -->
+<!-- The header includes the UMBC logo and navigation links. The main section displays the current weather information, and the footer provides links to emergency updates and social media. -->
+<body>
+    <header>
+        <div class="logo">
+            <a href="homepage.html"><img src="umbc weather logo.png" alt="UMBC Weather Logo" style="height: 65px; width: 70px; vertical-align: middle;"></a> <!-- Link to homepage with UMBC logo -->
+            UMBC Weather
+        </div>
+
+        <nav>
+            <ul>
+                <!-- Navigation links for the homepage -->
+                <!-- These links allow users to navigate to different sections of the UMBC Weather website. -->
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="forecast.html">Forecast</a></li>
+                <li><a href="alerts.html">Alerts</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="notifications.html">Notifications</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content area for displaying weather information -->
+    <!-- The main section includes a title and a container for the weather data. -->
+    <main>
+        <div class="weather-card">
+            <h2 id="city-name">UMBC, MD</h2>
+            <div id="weather-icon"></div>
+            <p id="temperature"></p>
+            <p id="weather-description"></p>
+            <p id="wind-speed"></p>
+            <p id="precipitation"></p>
+            <p id="humidity-uv"></p>
+        </div>
+    </main>
+
+    <!-- Footer section for additional information and links -->
+    <!-- The footer includes links to UMBC emergency updates and social media. -->
+    <!-- These links provide users with important information and ways to connect with UMBC. -->
+    <footer>
+        <p><a href="https://police.umbc.edu/emergency-preparedness/hazard-mitigation/emergency-action-procedures-for-severe-storms/">UMBC Emergency Updates</a> | <a href="https://www.instagram.com/umbclife/">Follow us on Social Media</a></p>
+    </footer>
+
+</body>
+</html>

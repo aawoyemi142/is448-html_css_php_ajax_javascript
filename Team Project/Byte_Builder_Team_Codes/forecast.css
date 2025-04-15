@@ -1,0 +1,38 @@
+
+/*Author: Val Estibeiro*/
+
+/*Add styles for the weather forecast page*/
+.forecast-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+/* Add styles for the forecast cards */
+.forecast-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    width: 150px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Add styles for the forecast card elements */
+.forecast-card h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.forecast-card p {
+    margin: 5px 0;
+}
+
+.forecast-card img {
+    max-width: 50px;
+    height: auto;
+    margin-bottom: 10px;
+}

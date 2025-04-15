@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Author: -->
+
+<head>
+    <!-- This is a simple HTML document for UMBC Weather history page -->
+    <!-- The page allows users to select a date and view historical weather data for that date. It includes a header with navigation links, a main section for the historical data, and a footer with additional information. -->
+    <title>UMBC Weather - History</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="history.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<!-- The body of the document contains the main content and structure of the page. -->
+<!-- The header includes the UMBC logo and navigation links. The main section displays historical weather data and a temperature trend graph, and the footer provides links to emergency updates and social media. -->
+<body>
+    <header>
+        <div class="logo">
+            <a href="homepage.html"><img src="umbc weather logo.png" alt="UMBC Weather Logo" style="height: 65px; width: 70px; vertical-align: middle;"></a> <!-- Link to homepage with UMBC logo -->
+            UMBC Weather
+        </div>
+        
+        <!-- Navigation links for the history page -->
+        <!-- These links allow users to navigate to different sections of the UMBC Weather website. -->
+        <nav>
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="forecast.html">Forecast</a></li>
+                <li><a href="alerts.html">Alerts</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="notifications.html">Notifications</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content area for displaying historical weather data -->
+    <!-- The main section includes a title, a date picker for selecting a date, and a table for displaying historical weather data. -->
+    <main>
+        <h2>Historical Weather Data</h2>
+        <div class="date-picker">
+            <label for="history-date">Select Date:</label>
+            <input type="date" id="history-date" name="history-date">
+            <button onclick="fetchHistoricalData()">Get Data</button>
+        </div>
+
+        <!-- Historical data table for displaying weather information -->
+        <!-- This section includes a title and a container for the table of historical weather data. -->
+        <div id="results-table" style="margin-top: 20px;">
+            <table border="1" width="100%">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Temperature (°F)</th>
+                        <th>Humidity (%)</th>
+                        <th>Wind Speed (mph)</th>
+                    </tr>
+                </thead>
+                <tbody id="history-data">
+                    <tr><td colspan="4">Select a date to view data.</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Graph section for displaying temperature trend over the past years -->
+        <!-- This section includes a title and a canvas element for rendering the temperature trend graph. -->
+        <div id="graph-container" style="margin-top: 30px;">
+            <h3>Temperature Trend (Past Years)</h3>
+            <canvas id="temperatureChart"></canvas>
+        </div>
+    </main>
+
+    <!-- Footer section for additional information and links -->
+    <!-- The footer includes links to UMBC emergency updates and social media. -->
+    <footer>
+        <p><a href="https://police.umbc.edu/emergency-preparedness/hazard-mitigation/emergency-action-procedures-for-severe-storms/">UMBC Emergency Updates</a> | <a href="https://www.instagram.com/umbclife/">Follow us on Social Media</a></p>
+    </footer>
+
+</body>
+</html>

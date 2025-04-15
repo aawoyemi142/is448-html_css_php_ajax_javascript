@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Authors: Adepeju Awoyemi, Emaan Dar, Val Estibeiro, Vushma Ahmad-->
+
+<head>
+    <!-- This is a simple HTML document for UMBC Weather notifications page -->
+    <!-- The page allows users to view weather and class cancellation notifications. It includes a header with navigation links, a main section for the notifications, and a footer with additional information. -->
+    <meta charset="UTF-8">
+    <title>UMBC Weather - Notifications</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="notifications.css">
+</head>
+
+<!-- The body of the document contains the main content and structure of the page. -->
+<!-- The header includes the UMBC logo and navigation links. The main section displays weather and class cancellation notifications, and the footer provides links to emergency updates and social media. -->
+<body>
+    <header>
+        <div class="logo">
+            <a href="homepage.html"><img src="umbc weather logo.png" alt="UMBC Weather Logo" style="height: 65px; width: 70px; vertical-align: middle;"></a> <!-- Link to homepage with UMBC logo -->
+            UMBC Weather
+        </div>
+
+        <nav>
+            <ul>
+                <!-- Navigation links for the notifications page -->
+                <!-- These links allow users to navigate to different sections of the UMBC Weather website. -->
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="forecast.html">Forecast</a></li>
+                <li><a href="alerts.html">Alerts</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="notifications.html">Notifications</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content area for displaying weather and class cancellation notifications -->
+    <!-- The main section includes a title and a container for the list of notifications. -->
+    <main>
+        <h2>Weather & Class Cancellation Notifications</h2>
+        <div id="notification-list">
+            <div class="notification-item">
+                <p>UMBC has canceled all classes after 4 PM due to snowstorm.</p>
+            </div>
+
+            <!-- This section includes a title and a container for the list of notifications. -->
+            <div class="notification-item">
+                <p>Heavy rainfall expected at 3 PM. Some parking lots may flood.</p>
+            </div>
+            </div>
+
+        <!-- Notification settings section for managing notification preferences -->
+        <!-- This section includes a title and a form for selecting notification preferences. -->
+        <div id="notification-settings" style="margin-top: 20px;">
+            <h3>Notification Preferences</h3>
+            <label>
+                <input type="checkbox" id="email-pref"> Email Notifications
+            </label><br>
+            <label>
+                <input type="checkbox" id="sms-pref"> SMS Notifications
+            </label><br>
+            <label>
+                <input type="checkbox" id="in-app-pref"> In-App Notifications
+            </label><br>
+            <button onclick="saveNotificationPreferences()">Save Preferences</button>
+        </div>
+    </main>
+
+    <!-- Footer section for additional information and links -->
+    <!-- The footer includes links to UMBC emergency updates and social media. -->
+    <footer>
+        <p><a href="https://police.umbc.edu/emergency-preparedness/hazard-mitigation/emergency-action-procedures-for-severe-storms/">UMBC Emergency Updates</a> | <a href="https://www.instagram.com/umbclife/">Follow us on Social Media</a></p>
+    </footer>
+
+</body>
+</html>

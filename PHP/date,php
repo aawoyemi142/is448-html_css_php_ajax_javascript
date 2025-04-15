@@ -1,0 +1,4 @@
+<?php
+echo "Today is: ";
+print date("l, F j, Y");
+?>

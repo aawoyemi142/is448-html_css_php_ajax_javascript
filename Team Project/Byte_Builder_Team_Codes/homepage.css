@@ -1,0 +1,69 @@
+/*Author: Adepeju Awoyemi*/
+
+/* Add styles for the homepage */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Add styles for the header */
+header {
+    background-color: #090909; 
+    color: white;
+    padding: 0em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Add styles for the logo */
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* Add styles for the navigation menu */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Add styles for the main content area */
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+}
+
+/* Add styles for the weather card */
+.weather-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+/* Add styles for the weather card elements */
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #ddd;
+    font-size: 0.8em;
+}

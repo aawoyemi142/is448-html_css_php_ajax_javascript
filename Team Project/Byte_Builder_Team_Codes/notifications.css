@@ -1,0 +1,55 @@
+/*Authors: Adepeju Awoyemi, Emaan Dar, Val Estibeiro, Vushma Ahmad*/
+
+/* Add styles for the notifications page */
+#notification-list {
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 20px;
+}
+
+/* Add styles for the notification list header */
+.notification-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+/* Add styles for the notification item elements */
+#notification-settings {
+    padding: 20px;
+}
+
+/* Add styles for the notification settings header */
+#notification-settings h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+/* Add styles for the notification settings form */
+#notification-settings label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* Add styles for the notification settings inputs */
+#notification-settings input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Add styles for the notification settings button */
+#notification-settings button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Add styles for the notification settings button hover effect */
+#notification-settings button:hover {
+    background-color: #218838;
+}

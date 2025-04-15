@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Web Page2</title>
+    </head>
+    <body>
+        <!-- This page introduces me -->
+        
+        <h1>Welcome to My Personal Page</h1>
+
+        <p>My name is Adepeju Awoyemi. I am an undergraduate student at UMBC.</p>
+        
+        <p>An enthusiastic and proficient senior majoring in Information Systems. 
+            I enjoy working on different IT projects and ensuring the completion of said 
+            projects. I have worked with tools such as Kubernetes, Docker, AWS, Splunk, 
+            Jenkins, Gitlab - source code management, etc. I hope to someday work for a big 
+            organization and own businesses. I am looking forward to working as a 
+            System Administrator, Kubernetes Administrator, or DevSecOps Engineer.</p>
+
+        <p>My hobbies include reading, coding, playing soccer, watching movies, and completing IT related projects.</p>
+
+        <!-- Unordered list of favorite books -->
+        <h2>My Favorite Books</h2>
+        <ul>
+            <li>Bible</li>
+            <li>48 Laws of Power</li>
+            <li>Rich Dad Poor Dad</li>
+            <li>Think and Grow Rich</li>
+            <li>Act of Seduction</li>
+        </ul>
+
+        <!-- Ordered list of favorite movies -->
+        <h2>My Favorite Movies</h2>
+        <ol>
+            <li>Coming to America</li>
+            <li>Black Panther</li>
+            <li>Avengers</li>
+            <li>Thor</li>
+            <li>Anikulapo</li>
+        </ol>
+
+        <!-- Unordered list of activities-->
+        <h2>My Favorite Activities</h2>
+        <ul>
+            <li>Reading the Bible</li>
+            <li>Playing soccer</li>
+            <li>Coding</li>
+            <li>Completing IT related projects</li>
+            <li>Watching movies</li>
+        </ul>
+
+        <!-- Definition list of technical terms -->
+        <h2>Technical Terms</h2>
+        <dl>
+            <dt>HTML</dt>
+            <dd>Hypertext Markup Language used for creating web pages.</dd>
+            <dt>CSS</dt>
+            <dd>Stylesheet language used for designing web pages.</dd>
+        </dl>
+
+        <!-- Creation of tables to structure data-->
+        <h2>My Schedule</h2>
+        <table border="1">
+
+            <!--Table headers in columns-->
+            <tr>
+                <th>Student_ID</th>
+                <th>Day</th>
+                <th>Time</th>
+                <th>Activity</th>
+                <th>Location</th>
+            </tr>
+
+            <!--Table rows of courses-->
+            <tr>
+                <td>1001</td>
+                <td>Monday</td>
+                <td>9:00 AM</td>
+                <td>Intro to Programming</td>
+                <td>Room B102</td>
+            </tr>
+            <tr>
+                <td>1002</td>
+                <td>Tuesday</td>
+                <td>2:00 PM</td>
+                <td>World History</td>
+                <td>Room D105</td>
+            </tr>
+            <tr>
+                <td>1003</td>
+                <td>Wednesday</td>
+                <td>3:00 PM</td>
+                <td>Jeet Kun Du Practice</td>
+                <td>Gym</td>
+            </tr>
+            <tr>
+                <td>1004</td>
+                <td>Thursday</td>
+                <td>1:30 PM</td>
+                <td>Chess Club</td>
+                <td>Student Hall 405</td>
+            </tr>
+            <tr>
+                <td>1005</td>
+                <td>Friday</td>
+                <td>12:30 PM</td>
+                <td>Markup and Scripting Language</td>
+                <td>IT 206</td>
+            </tr>
+        </table>
+
+        <!-- Building forms to collect user inputs -->
+        <h2>Contact Me</h2>
+        <form action="submit.php" method="get">
+            <label>Name: <input type="text" name="name"></label><br>
+            
+            <!-- Radio buttons -->
+            <label>Major: 
+                <select name="major">
+                    <option value="IS">Information Systems</option>
+                    <option value="CS">Computer Science</option>
+                    <option value="Math">Mathematics</option>
+                </select>
+            </label><br>
+            
+            <!-- Checkboxes for undergraduate levels-->
+            <label>Class Level:</label><br>
+            <label><input type="radio" name="level" value="Freshman"> Freshman</label>
+            <label><input type="radio" name="level" value="Sophomore"> Sophomore</label>
+            <label><input type="radio" name="level" value="Junior"> Junior</label>
+            <label><input type="radio" name="level" value="Senior"> Senior</label><br>
+            
+            <!-- Textarea for user comments -->
+            <input type="submit" value="Submit">
+        </form>
+        
+        <!-- Adding multimedia content -->
+        <h2>My Favorite Song</h2>
+        <audio controls>
+            <source src="Pasuma-Napoli_Like_Lagos.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <!-- Adding video content -->
+        <h2>My Favorite Video</h2>
+        <video width="320" height="240" controls>
+            <source src="snowboarding.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+    </body>
+</html>
