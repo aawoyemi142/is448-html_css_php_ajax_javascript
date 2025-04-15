@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hotel Booking</title>
+        <link rel="stylesheet" href="hotel_styles.css"> <!-- Link to external CSS file -->
+    </head>
+
+    <!-- This is a simple HTML document for hotel booking -->
+    <body>
+        <h1>Hotel Room Booking System</h1>
+        <br>
+        <!-- Hotel Booking Application Form -->
+    <form action="booking_confirmed.html" method="POST" id="hotelForm"> 
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="full_name" required> <!-- Name attribute added -->
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone_number" required>
+
+        <label for="roomtype">Room Type:</label>
+        <select id="roomtype" name="Room_Type" required>
+            <option value="Single">Single</option>
+            <option value="Double">Double</option>
+            <option value="Suite">Suite</option>
+            </select>
+        
+        <label for="checkin">Check-in Date:</label>
+        <input type="date" id="checkin" name="checkin_date" required>
+
+        <button type="submit">Submit Application</button>
+    </form>
+
+    
+    <!-- Hotel Rooms Type Table -->
+    <br>
+    <h2>Sample Room</h2>
+    <table>
+        <tr>
+            <th>Room Type</th>
+            <th>Features</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>Single</td>
+            <td>Single Bed</td>
+            <td>$100</td>
+        <tr>
+            <td>Double</td>
+            <td>Double Beds</td>
+            <td>$200</td>
+        </tr>
+        
+        <tr>
+            <td>Suite</td>
+            <td>Heated Floor, Double King-Size Bed, Presidential Bathroom</td>
+            <td>$1000 - $5000</td>
+        </tr>
+    </table>
+
+    <!-- Ordered List: Hotel Amenities -->
+    <br>
+    <h2>Hotel Amenities</h2>
+    <ol>
+        <li>Free Wi-Fi</li>
+        <li>Breakfast</li>
+        <li>Swimming Pool</li>
+    </ol>
+
+    <!-- Unordered List: What to bring -->
+    <br>
+    <h2>What to bring</h2>
+    <ul>
+        <li>ID </li>
+        <li>Credit Card</li>
+        <li>Personal Items</li>
+    </ul>
+
+    <!-- Definition List: Hospitality-Related Terms-->
+    <br>
+    <h2>Hospitality-Related Terms</h2>
+    <dl>
+        <dt>Check-in</dt>
+        <dd>The process of registering upon arrival.</dd>
+        <br>
+        <dt>Check-out</dt>
+        <dd>The process of settling the bill and leaving the hotel.</dd>
+        <br>
+        <dt>Reservation</dt>
+        <dd>A booking made in advance for a room.</dd>
+    </dl>
+</html>

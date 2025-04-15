@@ -1,0 +1,105 @@
+/* Apply styles to all elements */
+* {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background color for the entire page */
+body {
+    background-color: lightblue; 
+    padding: 20px;
+}
+
+/* Styling the form */
+#hotelForm {
+    background: white;
+    padding: 20px;
+    border-radius: 10px; /* Rounded edges */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+}
+
+/* Style labels and inputs */
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #a62525;
+    border-radius: 5px;
+}
+
+/* Button styling */
+button {
+    background-color: #28a745;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #1a0eca;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Highlight table headers */
+th {
+    background-color: #4c3bba;
+    color: white;
+}
+
+/* Styling for ordered, unordered, and definition lists */
+ol, ul, dl {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+/* Unordered List */
+ul {
+    list-style-type: square;
+}
+
+/* Ordered List */
+ol {
+    list-style-type: decimal;
+}
+
+/* Styling for headings */
+h1, h2 {
+    color: rgb(12, 216, 46);
+}
+
+/* ID Selector for styling form */
+#hotelForm {
+    border: 2px solid #000;
+}
+
+/* Class Selector Example */
+.table-container {
+    padding: 15px;
+    background: white;
+    border-radius: 5px;
+}
+
+/* Bonus: Additional Styling */
+h1 {
+    text-align: center;
+    font-style: italic; 
+}
